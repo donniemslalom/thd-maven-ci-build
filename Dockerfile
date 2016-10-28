@@ -50,8 +50,8 @@ RUN mkdir certificates
 RUN wget https://www.entrust.com/root-certificates/entrust_g2_ca.cer -O certificates/entrust_g2_ca.cer --no-check-certificate
 
 # set shell variables for java installation
-ENV java_version 1.8.0_11
-ENV filename jdk-8u11-linux-x64.tar.gz
+ENV java_version 1.8.0_111
+ENV filename jdk-8u111-linux-x64.tar.gz
 ENV downloadlink http://download.oracle.com/otn-pub/java/jdk/8u11-b12/$filename
 
 # download java, accepting the license agreement

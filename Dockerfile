@@ -107,6 +107,9 @@ RUN mvn org.apache.maven.plugins:maven-dependency-plugin:2.8:get -Dartifact=org.
 # install jq
 RUN curl -o /usr/local/bin/jq -L https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64 \
            && chmod +x /usr/local/bin/jq
+           
+# install pip
+RUN sudo apt-get install python-pip
 
 # Define default command.
 CMD ["bash"]
